@@ -5,7 +5,7 @@ public class StudentList {
 public static void main(String[] args) {
 
 //		Check arguments
-		if(args[0].equals("a")) {
+		if(args[0].equals("student-list")) {
 			System.out.println("Loading data ...");
 			try {
 			BufferedReader  s = new BufferedReader(
@@ -21,7 +21,7 @@ public static void main(String[] args) {
 			} catch (Exception e){}
 			System.out.println("Data Loaded.");
 		}
-		else if(args[0].equals("r"))
+		else if(args[0].equals("random-student-list"))
 		{
 			System.out.println("Loading data ...");
 			try {
@@ -37,7 +37,7 @@ public static void main(String[] args) {
 			} catch (Exception e){}
 			System.out.println("Data Loaded.");
 		}
-		else if(args[0].contains("+"))
+		else if(args[0].contains("swap-student-list"))
 		{
 			System.out.println("Loading data ...");
 			try 
@@ -55,7 +55,7 @@ public static void main(String[] args) {
 
 			System.out.println("Data Loaded.");
 		}
-		else if(args[0].contains("?"))
+		else if(args[0].contains("Query"))
 		{
 			System.out.println("Loading data ...");
 			try {
@@ -75,7 +75,7 @@ public static void main(String[] args) {
 			} catch (Exception e){}
 			System.out.println("Data Loaded.");
 		}
-		else if(args[0].contains("c"))
+		else if(args[0].contains("swap-another-list"))
 		{
 			System.out.println("Loading data ...");
 			try {
