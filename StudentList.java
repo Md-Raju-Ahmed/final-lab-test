@@ -11,7 +11,7 @@ public static void main(String[] args) {
 			BufferedReader  s = new BufferedReader(
 					        new InputStreamReader(
 							new FileInputStream("students.txt")));
-			String r = s.readLine();
+			String read = s.readLine();
 			String i[] = r.split(",");
 			for(String j : i) 
 			{ 
@@ -110,4 +110,12 @@ private static void displayStudent(List<student>studentlist){
   }
 
 }
+public class constant{
+	private static final String FINAL_STRING = "foo";
 
+public void stringPrinter(){
+    for(int i=0;i<10;i++){
+        System.out.println(FINAL_STRING);
+    }
+}
+}
