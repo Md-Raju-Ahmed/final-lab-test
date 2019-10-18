@@ -5,7 +5,7 @@ public class StudentList {
 public static void main(String[] args) {
 
 //		Check arguments
-		if(args[0].equals("student-list")) {
+		if(args[0].equals("student-list")) {.....//Show all data
 			System.out.println("Loading data ...");
 			try {
 			BufferedReader  s = new BufferedReader(
@@ -21,7 +21,7 @@ public static void main(String[] args) {
 			} catch (Exception e){}
 			System.out.println("Data Loaded.");
 		}
-		else if(args[0].equals("random-student-list"))
+		else if(args[0].equals("random-student-list")).....//Show random data
 		{
 			System.out.println("Loading data ...");
 			try {
@@ -37,7 +37,7 @@ public static void main(String[] args) {
 			} catch (Exception e){}
 			System.out.println("Data Loaded.");
 		}
-		else if(args[0].contains("swap-student-list"))
+		else if(args[0].contains("swap-student-list")).....//swap student list
 		{
 			System.out.println("Loading data ...");
 			try 
@@ -45,13 +45,13 @@ public static void main(String[] args) {
 			BufferedWriter s = new BufferedWriter(
             new FileWriter("students.txt", true));
 			String t = args[0].substring(1);
-	        String date_s = " 2011-01-18 00:00:00.0"; 
+	        String date_s = " 2011-01-18 00:00:00.0"; ....//date configue
             SimpleDateFormat dt = new SimpleDateFormat("yyyyy-mm-dd hh:mm:ss"); 
             Date date = dt.parse(date_s); 
             SimpleDateFormat dt1 = new SimpleDateFormat("yyyyy-mm-dd");
             System.out.println(dt1.format(date));
 		}
-		else if(args[0].contains("Query"))
+		else if(args[0].contains("Query"))......//for help
 		{
 			System.out.println("Loading data ...");
 			try {
@@ -71,7 +71,7 @@ public static void main(String[] args) {
 			} catch (Exception e){}
 			System.out.println("Data Loaded.");
 		}
-		else if(args[0].contains("swap-another-list"))
+		else if(args[0].contains("swap-another-list")).....//show swaap list
 		{
 			System.out.println("Loading data ...");
 			try {
