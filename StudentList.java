@@ -97,5 +97,17 @@ public static void main(String[] args) {
 			} catch (Exception e){}
 			System.out.println("Data Loaded.");
 		}
+
+private static void displayStudent(List<student>studentlist){
+	for(student temp :struidentlist){
+		System.out.println(temp);
 	}
+
+
+     }
+
+	
+  }
+
 }
+
