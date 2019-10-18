@@ -60,12 +60,12 @@ public static void main(String[] args) {
 							new FileInputStream("students.txt")));
 			String r = s.readLine();
 			String i[] = r.split(",");
-			boolean done = false;
+			boolean done = true;
 			String t = args[0].substring(1);
 			for(int idx = 0; idx<i.length && !done; idx++) {
 				if(i[idx].equals(t)) {
 					System.out.println("We found it!");
-						done=true;
+						done=false;
 				}
 			}
 			} catch (Exception e){}
