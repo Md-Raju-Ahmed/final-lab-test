@@ -81,8 +81,8 @@ public static void main(String[] args) {
 			String D = s.readLine();
 			char a[] = D.toCharArray();
 		boolean runWithRetries(int maxRetries, ThrowingTask t) { 
-    int count = 0;
-    while (count < maxRetries) {
+        int count = 0;
+        while (count < maxRetries) {
         try {
             t.run();
             return true;
@@ -103,7 +103,17 @@ private static void displayStudent(List<student>studentlist){
 
 	
   }
-
+public static int counterror(int n) {
+    if (n < 0) {
+        throw new IllegalArgumentException("Input should be positive");
+    }
+    int result = 0;
+    while ((n / 10) != 0) {
+        result++;
+        n /= 10;
+    }
+    return result + 1;
+}
 }
 public class constant{
 	private static final String FINAL_STRING = "foo";
